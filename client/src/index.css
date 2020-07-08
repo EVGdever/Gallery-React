@@ -1,0 +1,90 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 860px;
+    min-width: 360px;
+    margin: 0 100px;
+}
+
+.formBlock {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.input-file {
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+    border: 6px solid black;
+    padding: 100px 100px 0;
+    justify-content: center;
+    display: flex;
+}
+
+.btn-upload {
+    width: 100%;
+    padding: 15px;
+    border: 5px solid;
+    border-top: navajowhite;
+    border-radius: 0 0 10px 10px;
+}
+
+.images-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+}
+
+.image-block {
+    position: relative;
+}
+
+.image {
+    box-shadow: 4px 4px 4px #bbb0b0;
+}
+
+.btn-delete {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    background-color: red;
+    color: wheat;
+    opacity: 0.1;
+}
+
+.image-block:hover .btn-delete {
+    opacity: 1;
+}
+
+.loader-block {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
